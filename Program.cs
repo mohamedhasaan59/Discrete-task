@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Discrete_project_2
+namespace Discrete_project_1
 {
     internal class Program
     {
@@ -16,28 +16,28 @@ namespace Discrete_project_2
 
             Console.Write("Enter the end number:");
             int max = int.Parse(Console.ReadLine());
+
             
             for (int n1 = min; n1 <= max; n1++)
             {
                 
                 for (int n2 = 1; n2 <= max; n2++)
                 {
-                     
-                    if (n1 % n2 == 0 && n1 != n2)
+                    
+                    if (n1 % n2 == 0)
                     {
-                        
-                        sum += n2;
+                     
+                        sum += 1;
                     }
                 }
                 
-                if (sum == n1)
+                if (sum == 2)
                 {
-                    Console.WriteLine(n1);
-                   
+                    Console.WriteLine( n1);
                 }
-                
                 sum = 0;
             }
-        }   
+        }
     }
 }
+
